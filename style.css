@@ -68,7 +68,6 @@ header .header-icon-btn {
     transform: translateY(-50%);
     right: 8rem;
 
-
     border: none;
     outline: none;
     background-color: transparent;
@@ -206,7 +205,7 @@ header .header-icon-btn {
 
 
 /***********************************/
-/*              Brands             */
+/*              Product            */
 /***********************************/
 
 
@@ -225,25 +224,40 @@ header .header-icon-btn {
 
 
 .product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 1.6rem;
+}
+
+.product {
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product img {
+    width: 80%;
 }
 
 .product-title {
     font-size: 1.8rem;
     margin: 1.2rem 0 1.2rem 0.8rem;
+    width: 80%;
 }
 
 .ranking {
     margin: 0 0 1.2rem 0.8rem;
+    width: 80%;
 }
 
 .price-container {
     display: flex;
     gap: 0.8rem;
     margin: 0 0 1.2rem 0.8rem;
+    width: 80%;
 }
 
 .price-dark {
