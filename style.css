@@ -174,6 +174,11 @@ header .header-icon-btn {
     margin-top: 4.8rem;
 }
 
+
+.hero-stats {
+    position: relative;
+}
+
 .hero-stats p {
     font-size: 1.4rem;
     margin-top: 0.4rem;
@@ -199,9 +204,6 @@ header .header-icon-btn {
 
 }
 
-.hero-stats {
-    position: relative;
-}
 
 /***********************************/
 /*              Brands             */
@@ -319,4 +321,73 @@ header .header-icon-btn {
     top: 10%;
     left: 5%;
     font-size: 3.6rem;
+}
+
+
+
+
+
+
+/*************************/
+/*       Testimonial     */
+/*************************/
+
+.testimonial-title h2 {
+    width: max-content;
+    text-align: start;
+}
+
+.testimonial-title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.testinomial-icon-holder {
+    justify-self: flex-end;
+    align-self: center;
+    gap: 1.6rem;
+}
+
+
+.testinomial-icon-holder button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 3rem;
+}
+
+
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem ;
+}
+
+
+.testimonial {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding: 1.6rem;
+}
+
+.name-holder {
+    display: flex;
+    align-items: center;
+    margin: 1.6rem 0;
+    gap: 1.8rem;
+}
+
+.name-holder ion-icon {
+    font-size: 3rem;
+    color: #01AB31;
+    padding: 0;
+    margin: 0;
+}
+
+.testimonial article p {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.2;
 }
