@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "Int-bold";
+    /* Name the font */
+    src: url("/Assets/fonts/CU/Fontspring-DEMO-integralcf-bold.otf") format("opentype");
+    font-weight: normal;
+    /* Optional, specify weight */
+    font-style: normal;
+    /* Optional, specify style */
+}
+
+@font-face {
+    font-family: "Int-medium";
+    /* Name the font */
+    src: url("/Assets/fonts/CU/Fontspring-DEMO-integralcf-medium.otf") format("opentype");
+    font-weight: normal;
+    /* Optional, specify weight */
+    font-style: normal;
+    /* Optional, specify style */
+}
+
+
+@font-face {
+    font-family: "Satoshi-light";
+    /* Name the font */
+    src: url("/Assets/fonts/satoshi/Satoshi-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Satoshi-medium";
+    /* Name the font */
+    src: url("/Assets/fonts/satoshi/Satoshi-Medium.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: "Satoshi-light";
+    font-weight: 300;
+    height: 3.8rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+header p {
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+}
+
+header p a {
+    font-weight: var(--font-weight-bold);
+    text-decoration: underline;
+}
+
+header .header-icon-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8rem;
+
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.header-icon {
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--color-white);
+    font-weight: 600;
+    --ionicon-stroke-width: 4rem;
+}
+
+.navbar {
+    /* margin: 2.4rem auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3.2rem;
+    gap: 4rem;
+}
+
+.navbar img {
+    height: 2.4rem;
+}
+
+.nav-icon-holder {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.nav-icon {
+    cursor: pointer;
+    font-size: 2.4em;
+    font-weight: 600;
+    --ionicon-stroke-width: 4rem;
+}
+
+.nav-list a {
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-black);
+
+}
+
+.nav-search {
+    flex-grow: 1;
+    background-color: var(--color-bg-hero);
+    padding: 1.6rem 1.2rem;
+    border-radius: 500px;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.nav-search ion-icon {
+    font-size: 2rem;
+}
+
+.nav-search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+}
+
+
+.hero {
+    background-color: var(--color-bg-hero);
+}
+
+.hero-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 0;
+}
+
+.hero-text {
+    color: var(--color-black);
+    opacity: 60%;
+    font-size: 1.6rem;
+    margin: 3.2rem 0;
+    line-height: 1.5;
+}
+
+
+
+.hero-stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.4rem;
+    margin-top: 4.8rem;
+}
+
+.hero-stats p {
+    font-size: 1.4rem;
+    margin-top: 0.4rem;
+    opacity: 60%;
+}
+
+.hero-stats:not(:last-child) ::after {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    content: '';
+    width: 0.2rem;
+    height: 100%;
+    background-color: var(--color-black);
+    opacity: 10%;
+}
+
+
+.hero-img-container img {
+    width: 130%;
+    margin-left: 3rem;
+    transform: translateY(0.3%);
+
+}
+
+.hero-stats {
+    position: relative;
+}
+
+/***********************************/
+/*              Brands             */
+/***********************************/
+
+
+.section-brands {
+    background-color: var(--color-black);
+    border-top: 1px solid var(--color-black);
+    z-index: 10;
+    position: relative;
+}
+
+.section-brands .list {
+    gap: 0;
+    padding: 4.8rem;
+    justify-content: space-between;
+}
+
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.product-title {
+    font-size: 1.8rem;
+    margin: 1.2rem 0 1.2rem 0.8rem;
+}
+
+.ranking {
+    margin: 0 0 1.2rem 0.8rem;
+}
+
+.price-container {
+    display: flex;
+    gap: 0.8rem;
+    margin: 0 0 1.2rem 0.8rem;
+}
+
+.price-dark {
+    font-family: 'Satoshi-medium';
+    font-size: 2.4rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.price-light {
+    font-family: 'Satoshi-medium';
+    font-size: 2.4rem;
+    font-weight: var(--font-weight-bold);
+    color: rgb(0, 0, 0, 0.5);
+    text-decoration: line-through;
+}
+
+.discount-tag {
+    padding: 0.6rem 1.4rem;
+    background-color: hsla(0, 100%, 60%, 0.1);
+    color: #FF3333;
+    border-radius: 150px;
+    font-size: 1.2rem;
+}
