@@ -147,7 +147,7 @@
     }
 
     .section-separation-margin {
-        margin-top: 6.2rem;
+        margin: 6.2rem 0;
     }
 
     .margin-bottom-lg {
@@ -422,6 +422,10 @@
 
     .nav-icon-holder ion-icon[name="search-outline"] {
         display: inline-block;
+    }
+
+    .btn-outline {
+        margin-bottom: 0;
     }
 
 }
