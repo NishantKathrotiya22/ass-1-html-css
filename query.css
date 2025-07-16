@@ -80,7 +80,9 @@
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
         white-space: nowrap;
         display: inline-block;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
+        overflow-x: auto;
+        scrollbar-width: none;
     }
 
     .product {
@@ -125,6 +127,24 @@
     }
 
 
+    .container {
+        margin: 0 2rem;
+        padding: 0;
+    }
+
+    .section-beto-grid .grid-holder {
+        padding: 2rem 1.6rem 1.6rem 1.6rem;
+    }
+
+    .navbar{
+        padding: 2rem 0;
+    }
+
+     .menu-btn ion-icon,
+    .nav-icon-holder ion-icon {
+        font-size: 3rem;
+    }
+
 }
 
 
@@ -147,7 +167,7 @@
     }
 
     .section-separation-margin {
-        margin: 6.2rem 0;
+        margin-top: 6.2rem;
     }
 
     .margin-bottom-lg {
@@ -176,10 +196,7 @@
         padding: 0;
     }
 
-    .menu-btn ion-icon,
-    .nav-icon-holder ion-icon {
-        font-size: 3rem;
-    }
+   
 
     .nav-search {
         display: none;
@@ -347,7 +364,7 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         gap: 24px;
-        /* space between testimonials */
+        scrollbar-width: none;
         padding-bottom: 1rem;
         /* optional */
     }

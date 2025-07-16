@@ -104,13 +104,14 @@ header .header-icon-btn {
     --ionicon-stroke-width: 4rem;
 }
 
-.nav-list a {
+.nav-list a,
+.nav-list a:visited {
     font-size: 1.6rem;
     cursor: pointer;
     text-decoration: none;
     color: var(--color-black);
-
 }
+
 
 .nav-search {
     flex-grow: 1;
@@ -199,6 +200,12 @@ header .header-icon-btn {
 
 }
 
+.lit-holder {
+    padding: 0;
+    justify-content: space-between;
+    max-width: 120rem;
+}
+
 
 /***********************************/
 /*              Product            */
@@ -211,8 +218,6 @@ header .header-icon-btn {
     z-index: 10;
     position: relative;
 }
-
-
 
 
 .product-container {
@@ -231,7 +236,7 @@ header .header-icon-btn {
 }
 
 .product img {
-    width: 80%;
+    width: 18.3rem;
 }
 
 .product-title {
@@ -292,7 +297,7 @@ header .header-icon-btn {
 .grid-holder {
     background-color: var(--color-bg-hero);
     border-radius: 4rem;
-    /* padding: 4.8rem; */
+    padding: 4.3rem;
 }
 
 
@@ -593,4 +598,32 @@ form {
 
 .menu-btn {
     display: none;
+}
+
+
+
+
+.star1 {
+    height: 6.5rem !important;
+    width: 6.5rem !important;
+    top: 5.4rem !important;
+    right: 0 !important;
+}
+
+.star2 {
+    height: 3.5rem !important;
+    width: 3.5rem !important;
+    bottom: 45% !important;
+    left: 5% !important;
+}
+
+.star {
+    display: inline-block;
+    position: absolute !important;
+
+}
+
+.hero-img-container {
+    display: inline-block;
+    position: relative;
 }
