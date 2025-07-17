@@ -602,22 +602,22 @@ form {
 
 
 .star1 {
-    height: 6.5rem !important;
-    width: 6.5rem !important;
-    top: 5.4rem !important;
-    right: 0 !important;
+    height: 6.5rem ;
+    width: 6.5rem;
+    top: 5.4rem;
+    right: 0;
 }
 
 .star2 {
-    height: 3.5rem !important;
-    width: 3.5rem !important;
-    bottom: 45% !important;
-    left: 5% !important;
+    height: 3.5rem;
+    width: 3.5rem;
+    bottom: 45%;
+    left: 5%;
 }
 
 .star {
     display: inline-block;
-    position: absolute !important;
+    position: absolute;
 
 }
 
